@@ -6,7 +6,7 @@ using BlogEntities.Models;
 
 namespace BlogEntities.Init
 {
-    public class BlogEngineDBInitializer : DropCreateDatabaseAlways<BlogEntitiesContext>
+    public class BlogEngineDBInitializer : DropCreateDatabaseIfModelChanges<BlogEntitiesContext>
     {
         protected override void Seed(BlogEntitiesContext context)
         {
