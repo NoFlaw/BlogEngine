@@ -12,7 +12,7 @@ namespace BlogEngine.Controllers
         {
             ViewBag.Message = "Message of the day: ";
             ViewBag.CurrentMessage = @"'Here lays the future, but only its remains...'";
-
+            //Merge Test
             return View();
         }
 
