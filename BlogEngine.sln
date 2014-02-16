@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine", "BlogEngine\BlogEngine.csproj", "{02B001DD-04AB-4706-AD64-BECCC6163F2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEntities", "BlogEntities\BlogEntities.csproj", "{4211FCDC-3F1F-441F-9230-2C0C582BDB41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{4107D02F-6698-4F05-8842-22BC737D6680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{C1786E8C-13F8-4CA4-BAE9-D7CC25882DD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02B001DD-04AB-4706-AD64-BECCC6163F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B001DD-04AB-4706-AD64-BECCC6163F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B001DD-04AB-4706-AD64-BECCC6163F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B001DD-04AB-4706-AD64-BECCC6163F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4211FCDC-3F1F-441F-9230-2C0C582BDB41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4211FCDC-3F1F-441F-9230-2C0C582BDB41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4211FCDC-3F1F-441F-9230-2C0C582BDB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4211FCDC-3F1F-441F-9230-2C0C582BDB41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4107D02F-6698-4F05-8842-22BC737D6680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4107D02F-6698-4F05-8842-22BC737D6680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4107D02F-6698-4F05-8842-22BC737D6680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4107D02F-6698-4F05-8842-22BC737D6680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1786E8C-13F8-4CA4-BAE9-D7CC25882DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1786E8C-13F8-4CA4-BAE9-D7CC25882DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1786E8C-13F8-4CA4-BAE9-D7CC25882DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1786E8C-13F8-4CA4-BAE9-D7CC25882DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

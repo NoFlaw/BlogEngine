@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title</h1> 
+            </hgroup>
+            <hgroup class="title">
+                <h2 style="color: GrayText">@ViewBag.Message</h2>
+                <h2>@ViewBag.CurrentMessage</h2>
+            </hgroup>
+            
+            <p>
+            Paragraph giving details upon the message of the day, possibly author, date, where more information is located etc...
+            </p>
+        </div>
+    </section>
+}
+
+<h3>No Data Display</h3>
+<ol class="round">
+    <li class="one">
+        <h5>1st Title</h5>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+    </li>
+
+    <li class="two">
+        <h5>Second Title</h5>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+    </li>
+
+    <li class="three">
+        <h5>Third Title</h5>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+    </li>
+</ol>

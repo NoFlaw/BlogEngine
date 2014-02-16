@@ -1,0 +1,22 @@
+BlogEngine v2.0
+
+Last Stable Release: v1.0
+
+::::New Features & Upgrades:::: 
+Added ability to make posts on blogs. Added UI work. Added calendar (not showing), adjusted date formats, added text areas, removed redundant code wasting resources with context, added Methods to service tier for smoother functionality; built account db; added error handling;  Added new model, but is not implemented; renamed fields for clarity; removed viewstate data where wasted
+
+
+::::Fixes and Needs Fixed::::
+Has calendar, with ui fixed, but is not used anywhere but already wired up. Date format needs to be investigated more with saving into the database in relation to mapping, as well as the format for the jqueryui.datepicker, which is missing sliders due to the version of files that are being gathered in Bundle.Config.cs
+
+
+Viewmodel not implemented, made use of a viewbag
+
+
+::::About BlogEngine  (Behind the Scenes)::::
+EF Code First, Database drop and create upon access of context in an entire session.
+Using EF Repository Pattern
+Using Unit Of Work Pattern
+Using Automapper (wired up, no mappings (viewmodel?))
+Using StructureMap
+C#, jQuery, MVC4, SQL

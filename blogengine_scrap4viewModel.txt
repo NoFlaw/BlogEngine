@@ -1,0 +1,28 @@
+        //public ActionResult Index()
+        //{
+        //    //TODO: populate viewmodel via automapper
+        //    //Get a list of blogs
+        //    var blogList = BlogService.GetAllBlogs();
+
+        //    //Get a list of posts
+        //    var postList = BlogService.GetAllPosts();
+
+        //    //Mapping
+        //    var viewModel = new ViewBlogsViewModel
+        //    {
+        //        Blogs = blogList,
+        //        Posts = postList
+        //    };
+
+        //    using (_db = new BlogEntitiesContext())
+        //    {
+        //        //var vm = db.Blogs.Project().To<ViewBlogsViewModel>();                       
+        //    }
+
+        //    return View(viewModel);
+        //    var blogs = db.Blogs.Include(b => b.Post);
+        //    return View(blogs.ToList());
+        //}
+
+
+{"The conversion of a datetime2 data type to a datetime data type resulted in an out-of-range value.\r\nThe statement has been terminated."}

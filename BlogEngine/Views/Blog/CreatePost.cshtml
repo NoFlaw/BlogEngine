@@ -1,0 +1,81 @@
+﻿@using BL
+@using BlogEntities.Models
+@model BlogEntities.Models.Post
+
+@{
+    ViewBag.Title = "CreatePost";
+}
+
+<h2>CreatePost</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Post</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CurrentPost)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.CurrentPost)
+            @Html.ValidationMessageFor(model => model.CurrentPost)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NickName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NickName)
+            @Html.ValidationMessageFor(model => model.NickName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DateCreated)
+        </div>
+        <div class="editor-field">
+             
+            @Html.TextBoxFor(model => model.DateCreated, new { @readonly ="readonly", @class = "datepicker", Value = String.Format("{0:MM/dd/yyyy hh:mm:ss}", new Blog().DateCreated = DateTime.Now.ToLocalTime())})
+            @Html.ValidationMessageFor(model => model.DateCreated)
+        </div>
+
+@*        <div class="editor-label">
+            @Html.LabelFor(model => model.BlogId)
+        </div>*@
+        <div class="editor-field">
+            @Html.HiddenFor(model => model.BlogId, new { @readonly = "readonly"})
+            @Html.ValidationMessageFor(model => model.BlogId)            
+        </div>
+        <div>
+            @Html.Label("CurrentBlog: ")
+        </div>
+            @Html.TextArea("BlogDesc", new{disabled = "disabled"})           
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+        $(document).ready(function () {
+            
+            $.datepicker.setDefaults({
+                showOn: "none", //both
+                buttonImageOnly: true, 
+                buttonImage: "/Content/CalendarPics/calendar.png",
+                buttonText: "Calendar",
+                showButtonPanel: true,
+                
+            });
+
+            $(".datepicker").datepicker({ dateFormat: "mm/dd/yy" });
+        });
+    </script>
+}
